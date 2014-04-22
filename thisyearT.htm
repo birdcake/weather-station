@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="<#location> weather data" />
+<meta name="keywords" content="Cumulus, <#location> weather data, weather, data, weather station" />
+  <title><#location> weather</title>
+  <link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="content">
+<h1><#location> weather</h1>
+<h2 style="text-align: left; text-transform: none;">&nbsp;本站地址：江门市蓬江区</h2>
+
+<table width="100%" cellpadding="0" cellspacing="0" id="Current_Weather_Records">
+   <caption>
+   年度气象极值
+   </caption>
+  <tr>
+    <td colspan="3" class="tableseparator_temp">温湿度</td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高温度</td>
+    <td class="right_align_indented"><#YearTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearTempHT>&nbsp;on&nbsp;<#YearTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低温度</td>
+    <td class="right_align_indented"><#YearTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearTempLT>&nbsp;on&nbsp;<#YearTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高露点</td>
+    <td class="right_align_indented"><#YearDewPointH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearDewPointHT>&nbsp;on&nbsp;<#YearDewPointHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低露点</td>
+    <td class="right_align_indented"><#YearDewPointL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearDewPointLT>&nbsp;on&nbsp;<#YearDewPointLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高体感温度</td>
+    <td class="right_align_indented"><#YearAppTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearAppTempHT>&nbsp;on&nbsp;<#YearAppTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低体感温度</td>
+    <td class="right_align_indented"><#YearAppTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearAppTempLT>&nbsp;on&nbsp;<#YearAppTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低风寒温度</td>
+    <td class="right_align_indented"><#YearWChillL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearWChillLT>&nbsp;on&nbsp;<#YearWChillLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高热力指数</td>
+    <td class="right_align_indented"><#YearHeatIndexH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearHeatIndexHT>&nbsp;on&nbsp;<#YearHeatIndexHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">Highest&nbsp;Minimum</td>
+    <td class="right_align_indented"><#YearMinTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearMinTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">Lowest&nbsp;Maximum</td>
+    <td class="right_align_indented"><#YearMaxTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearMaxTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高湿度</td>
+    <td class="right_align_indented"><#YearHumH>&nbsp;%</td>
+    <td class="right_align_indented"><#YearHumHT>&nbsp;on&nbsp;<#YearHumHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低湿度</td>
+    <td class="right_align_indented"><#YearHumL>&nbsp;%</td>
+    <td class="right_align_indented"><#YearHumLT>&nbsp;on&nbsp;<#YearHumLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最大昼夜温差</td>
+    <td class="right_align_indented"><#YearHighDailyTempRange>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearHighDailyTempRangeD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低昼夜温差</td>
+    <td class="right_align_indented"><#YearLowDailyTempRange>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#YearLowDailyTempRangeD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_rainfall">降雨量</td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">最高降雨速率</td>
+    <td class="right_align_indented"><#YearRainRateH>&nbsp;<#rainunit>/hr</td>
+    <td class="right_align_indented"><#YearRainRateHT>&nbsp;on&nbsp;<#YearRainRateHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">小时最高降雨</td>
+    <td class="right_align_indented"><#YearHourlyRainH>&nbsp;<#rainunit></td>
+    <td class="right_align_indented"><#YearHourlyRainHT>&nbsp;on&nbsp;<#YearHourlyRainHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">最高日降雨量</td>
+    <td class="right_align_indented"><#YearDailyRainH>&nbsp;<#rainunit></td>
+    <td class="right_align_indented"><#YearDailyRainHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">最高约降雨量</td>
+    <td class="right_align_indented"><#YearMonthlyRainH>&nbsp;<#rainunit></td>
+    <td class="right_align_indented"><#YearMonthlyRainHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">Longest&nbsp;Dry&nbsp;Period</td>
+    <td class="right_align_indented"><#YearLongestDryPeriod>&nbsp;days</td>
+    <td class="right_align_indented">to&nbsp;<#YearLongestDryPeriodD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">Longest&nbsp;Wet&nbsp;Period</td>
+    <td class="right_align_indented"><#YearLongestWetPeriod>&nbsp;days</td>
+    <td class="right_align_indented">to&nbsp;<#YearLongestWetPeriodD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_wind">风速风向</td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高阵风</td>
+    <td class="right_align_indented"><#YearGustH>&nbsp;<#windunit></td>
+    <td class="right_align_indented"><#YearGustHT>&nbsp;on&nbsp;<#YearGustHD></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高平均风速</td>
+    <td class="right_align_indented"><#YearWindH>&nbsp;<#windunit></td>
+    <td class="right_align_indented"><#YearWindHT>&nbsp;on&nbsp;<#YearWindHD></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高风程</td>
+    <td class="right_align_indented"><#YearWindRunH>&nbsp;<#windrununit></td>
+    <td class="right_align_indented"><#YearWindRunHD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_pressure">气压相关</td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td class="main_table_text_labels">最低气压&nbsp;(sl) </td>
+    <td class="right_align_indented"><#YearPressL>&nbsp;<#pressunit></td>
+    <td class="right_align_indented"><#YearPressLT>&nbsp;on&nbsp;<#YearPressLD></td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td class="main_table_text_labels">最高气压&nbsp;(sl)</td>
+    <td class="right_align_indented"><#YearPressH>&nbsp;<#pressunit></td>
+    <td class="right_align_indented"><#YearPressHT>&nbsp;on&nbsp;<#YearPressHD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="td_navigation_bar">:<a href="index.htm">now</a>::<a href="gauges.htm">gauges</a>::<a href="today.htm">today</a>::<a href="yesterday.htm">yesterday</a>::<a href="thismonth.htm">this&nbsp;month</a>::<a href="thisyear.htm">this&nbsp;year</a>::<a href="record.htm">records</a>::<a href="monthlyrecord.htm">monthly&nbsp;records</a>::<a href="trends.htm">trends</a>:<#forum><#webcam></td>
+  </tr>
+</table>
+<p class="credits"><br />
+页面更新 <#update><br />
+</p>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-13178528-2', 'jimy.me');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

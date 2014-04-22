@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="<#location> weather data" />
+<meta name="keywords" content="Cumulus, <#location> weather data, weather, data, weather station" />
+  <title><#location> weather</title>
+  <link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="content">
+<h1><#location> weather</h1>
+<h2 style="text-align: left; text-transform: none;">&nbsp;本站地址：江门市蓬江区</h2>
+
+<table width="100%" cellpadding="0" cellspacing="0" id="Current_Weather_Records">
+   <caption>
+   本月气象极值
+   </caption>
+  <tr>
+    <td colspan="3" class="tableseparator_temp">温湿度</td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高温度</td>
+    <td class="right_align_indented"><#MonthTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthTempHT>&nbsp;on&nbsp;<#MonthTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低温度 </td>
+    <td class="right_align_indented"><#MonthTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthTempLT>&nbsp;on&nbsp;<#MonthTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高露点</td>
+    <td class="right_align_indented"><#MonthDewPointH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthDewPointHT>&nbsp;on&nbsp;<#MonthDewPointHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低露点</td>
+    <td class="right_align_indented"><#MonthDewPointL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthDewPointLT>&nbsp;on&nbsp;<#MonthDewPointLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高体感温度</td>
+    <td class="right_align_indented"><#MonthAppTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthAppTempHT>&nbsp;on&nbsp;<#MonthAppTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低体感温度 </td>
+    <td class="right_align_indented"><#MonthAppTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthAppTempLT>&nbsp;on&nbsp;<#MonthAppTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低风寒温度</td>
+    <td class="right_align_indented"><#MonthWChillL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthWChillLT>&nbsp;on&nbsp;<#MonthWChillLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高热力指数</td>
+    <td class="right_align_indented"><#MonthHeatIndexH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthHeatIndexHT>&nbsp;on&nbsp;<#MonthHeatIndexHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">Highest&nbsp;Minimum</td>
+    <td class="right_align_indented"><#MonthMinTempH>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthMinTempHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">Lowest&nbsp;Maximum</td>
+    <td class="right_align_indented"><#MonthMaxTempL>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthMaxTempLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最高湿度</td>
+    <td class="right_align_indented"><#MonthHumH>&nbsp;%</td>
+    <td class="right_align_indented"><#MonthHumHT>&nbsp;on&nbsp;<#MonthHumHD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最低湿度</td>
+    <td class="right_align_indented"><#MonthHumL>&nbsp;%</td>
+    <td class="right_align_indented"><#MonthHumLT>&nbsp;on&nbsp;<#MonthHumLD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最大昼夜温差</td>
+    <td class="right_align_indented"><#MonthHighDailyTempRange>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthHighDailyTempRangeD></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td class="main_table_text_labels">最小昼夜温差</td>
+    <td class="right_align_indented"><#MonthLowDailyTempRange>&nbsp;<#tempunit></td>
+    <td class="right_align_indented"><#MonthLowDailyTempRangeD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_rainfall">降雨量</td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">最高降雨速率</td>
+    <td class="right_align_indented"><#MonthRainRateH>&nbsp;<#rainunit>/hr</td>
+    <td class="right_align_indented"><#MonthRainRateHT>&nbsp;on&nbsp;<#MonthRainRateHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">小时最高降雨</td>
+    <td class="right_align_indented"><#MonthHourlyRainH>&nbsp;<#rainunit></td>
+    <td class="right_align_indented"><#MonthHourlyRainHT>&nbsp;on&nbsp;<#MonthHourlyRainHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">最高日降雨量</td>
+    <td class="right_align_indented"><#MonthDailyRainH>&nbsp;<#rainunit></td>
+    <td class="right_align_indented"><#MonthDailyRainHD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">Longest&nbsp;Dry&nbsp;Period</td>
+    <td class="right_align_indented"><#MonthLongestDryPeriod>&nbsp;days</td>
+    <td class="right_align_indented">to&nbsp;<#MonthLongestDryPeriodD></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td class="main_table_text_labels">Longest&nbsp;Wet&nbsp;Period</td>
+    <td class="right_align_indented"><#MonthLongestWetPeriod>&nbsp;days</td>
+    <td class="right_align_indented">to&nbsp;<#MonthLongestWetPeriodD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_wind">风速风向</td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高阵风</td>
+    <td class="right_align_indented"><#MonthGustH>&nbsp;<#windunit></td>
+    <td class="right_align_indented"><#MonthGustHT>&nbsp;on&nbsp;<#MonthGustHD></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高平均风速</td>
+    <td class="right_align_indented"><#MonthWindH>&nbsp;<#windunit></td>
+    <td class="right_align_indented"><#MonthWindHT>&nbsp;on&nbsp;<#MonthWindHD></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td class="main_table_text_labels">最高风程</td>
+    <td class="right_align_indented"><#MonthWindRunH>&nbsp;<#windrununit></td>
+    <td class="right_align_indented"><#MonthWindRunHD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="tableseparator_pressure">气压相关</td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td class="main_table_text_labels">最低气压&nbsp;(sl) </td>
+    <td class="right_align_indented"><#MonthPressL>&nbsp;<#pressunit></td>
+    <td class="right_align_indented"><#MonthPressLT>&nbsp;on&nbsp;<#MonthPressLD></td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td class="main_table_text_labels">最高气压&nbsp;(sl)</td>
+    <td class="right_align_indented"><#MonthPressH>&nbsp;<#pressunit></td>
+    <td class="right_align_indented"><#MonthPressHT>&nbsp;on&nbsp;<#MonthPressHD></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="td_navigation_bar">:<a href="index.htm">now</a>::<a href="gauges.htm">gauges</a>::<a href="today.htm">today</a>::<a href="yesterday.htm">yesterday</a>::<a href="thismonth.htm">this&nbsp;month</a>::<a href="thisyear.htm">this&nbsp;year</a>::<a href="record.htm">records</a>::<a href="monthlyrecord.htm">monthly&nbsp;records</a>::<a href="trends.htm">trends</a>:<#forum><#webcam></td>
+  </tr>
+</table>
+<p class="credits"><br />
+页面更新 <#update><br />
+</p>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-13178528-2', 'jimy.me');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

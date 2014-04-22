@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="<#location> weather data" />
+<meta name="keywords" content="Cumulus, <#location> weather data, weather, data, weather station" />
+<title><#location> weather</title>
+<link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="content">
+<h1><#location> weather</h1>
+<h2 style="text-align: left; text-transform: none;" >
+&nbsp;本台地址：江门市蓬江区</h2>
+<!-- Almanac -->
+<table width="100%" border="0" cellpadding="10">
+  <tbody><tr>
+    <td class="labels">黎明:</td>
+    <td class="site_data" style="text-align: left;"><#dawn></td>
+    <td class="labels">日出:</td>
+    <td class="site_data" style="text-align: left;"><#sunrise></td>
+    <td class="labels">月出:</td>
+    <td class="site_data" style="text-align: left;"><#moonrise></td>
+    <td rowspan="3"><img src="images/moon.bmp" alt="Moon" width="64" align="left" border="0" height="64" style="margin: 0px 10px" /></td>
+  </tr>
+  <tr>
+    <td class="labels">黄昏:</td>
+     <td class="site_data" style="text-align: left;"><#dusk></td>
+    <td class="labels">日落:&nbsp;</td>
+    <td class="site_data" style="text-align: left;"><#sunset></td>
+    <td class="labels">月落:</td>
+    <td class="site_data" style="text-align: left;"><#moonset></td>
+  </tr>
+  <tr>
+    <td class="labels">扩展昼长:</td>
+    <td class="site_data" style="text-align: left;"><#daylightlength></td>
+    <td class="labels">昼长:</td>
+    <td class="site_data" style="text-align: left;"><#daylength></td>
+    <td class="labels">月相:</td>
+    <td class="site_data" style="text-align: left;"><#moonphase></td>
+  </tr>
+</tbody></table>
+<!-- END Almanac -->
+<p>欢迎访问 Jimmy 的气象台</p>
+<p>本台由私人设立，仅供科(Zhuang)研(B)之用... <a href="mailto:birdcake@live.com">呼叫Jimmy</a>
+</p>
+<p>网页好挫？更新太慢？进入新版.. <a href="http://ws.jimy.me">点我点我</a><br />
+<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <caption>
+  发布时间：<#time>
+  </caption>
+  <tr>
+    <td colspan="4" class="tableseparator_temp">温湿度</td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td>温度</td>
+    <td><#temp>&nbsp;<#tempunit></td>
+    <td>露点 </td>
+    <td><#dew>&nbsp;<#tempunit></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td>风寒</td>
+    <td><#wchill>&nbsp;<#tempunit></td>
+    <td>相对湿度</td>
+    <td><#hum>%</td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td>酷热指数</td>
+    <td><#heatindex>&nbsp;<#tempunit></td>
+    <td>体感温度</td>
+    <td><#apptemp>&nbsp;<#tempunit></td>
+  </tr>
+  <tr>
+    <td colspan="4" class="tableseparator_rainfall">降雨量</td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td>今日降雨</td>
+    <td><#rfall>&nbsp;<#rainunit></td>
+    <td>降雨速率</td>
+    <td><#rrate>&nbsp;<#rainunit>/hr</td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td>本月降雨</td>
+    <td><#rmonth>&nbsp;<#rainunit></td>
+    <td>全年降雨</td>
+    <td><#ryear>&nbsp;<#rainunit></td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td>过去一小时降雨</td>
+    <td><#rhour>&nbsp;<#rainunit></td>
+    <td>最近一次降雨</td>
+    <td><#LastRainTipISO></td>
+  </tr>
+
+  <tr>
+    <td colspan="4" class="tableseparator_wind">风力风向</td>
+  </tr>
+  <tr class="td_wind_data">
+    <td>阵风</td>
+    <td><#wgust>&nbsp;<#windunit></td>
+    <td>平均风速</td>
+    <td><#wspeed>&nbsp;<#windunit></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td>风向</td>
+    <td><#avgbearing>&deg; <#wdir></td>
+    <td>蒲福风力&nbsp;<#beaufort></td>
+    <td><#beaudesc></td>
+  </tr>
+  <tr>
+    <td colspan="4" class="tableseparator_pressure">气压相关</td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td>气压&nbsp;</td>
+    <td><#press>&nbsp;<#pressunit></td>
+    <td><#presstrend></td>
+    <td><#presstrendval>&nbsp;<#pressunit>/hr</td>
+  </tr>
+  <tr>
+    <td colspan="4" class="td_navigation_bar">:<a href="index.htm">now</a>::<a href="gauges.htm">gauges</a>::<a href="today.htm">today</a>::<a href="yesterday.htm">yesterday</a>::<a href="thismonth.htm">this&nbsp;month</a>::<a href="thisyear.htm">this&nbsp;year</a>::<a href="record.htm">records</a>::<a href="monthlyrecord.htm">monthly&nbsp;records</a>::<a href="trends.htm">trends</a>:<#forum><#webcam></td>
+  </tr>
+</table>
+<p class="credits"><br />
+页面更新: <#update><br />
+</p>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-13178528-2', 'jimy.me');
+  ga('send', 'pageview');
+
+</script>
+</div>
+</body>
+</html>

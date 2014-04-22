@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="<#location> weather data" />
+<meta name="keywords" content="Cumulus, <#location> weather data, weather, data, weather station" />
+  <title><#location> weather</title>
+  <link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div id="content">
+<h1><#location> weather</h1>
+<h2 style="text-align: left; text-transform: none;">
+&nbsp;本站地址：江门市蓬江区</h2>
+
+
+<p>&nbsp;</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+  <caption>
+  今日气象报告
+  </caption>
+  <tbody>
+    <tr>
+      <td colspan="3" class="tableseparator_temp">温湿度</td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最高温度</td>
+      <td><#tempTH>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TtempTH>&nbsp;</td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最低温度</td>
+      <td><#tempTL>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TtempTL></td>
+    </tr>
+	<tr class="td_temperature_data">
+      <td>昼夜温差</td>
+      <td><#temprange>&nbsp;<#tempunit></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最高体感温度</td>
+      <td><#apptempTH>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TapptempTH>&nbsp;</td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最低体感温度</td>
+      <td><#apptempTL>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TapptempTL></td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>风寒温度</td>
+      <td><#wchillTL>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TwchillTL></td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>热力指数</td>
+      <td><#heatindexTH>&nbsp;<#tempunit></td>
+      <td>at&nbsp;<#TheatindexTH></td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最高湿度</td>
+      <td><#humTH>&nbsp;%</td>
+      <td>at&nbsp;<#ThumTH>&nbsp;</td>
+    </tr>
+    <tr class="td_temperature_data">
+      <td>最低湿度</td>
+      <td><#humTL>&nbsp;%</td>
+      <td>at&nbsp;<#ThumTL></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="tableseparator_rainfall">降雨量</td>
+    </tr>
+    <tr class="td_rainfall_data">
+      <td>今日降雨量</td>
+      <td><#rfall>&nbsp;<#rainunit></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr class="td_rainfall_data">
+      <td>最高降雨速率</td>
+      <td><#rrateTM>&nbsp;<#rainunit>/hr</td>
+      <td>at&nbsp;<#TrrateTM></td>
+    </tr>
+    <tr class="td_rainfall_data">
+      <td>小时最高降雨量</td>
+      <td><#hourlyrainTH>&nbsp;<#rainunit></td>
+      <td>at&nbsp;<#ThourlyrainTH></td>
+    </tr>
+	<tr class="td_rainfall_data">
+      <td>Days&nbsp;Since&nbsp;Last&nbsp;Dry&nbsp;Day</td>
+      <td><#ConsecutiveRainDays></td>
+      <td>&nbsp;</td>
+    </tr>
+	<tr class="td_rainfall_data">
+      <td>Days&nbsp;Since&nbsp;It&nbsp;Last&nbsp;Rained</td>
+      <td><#ConsecutiveDryDays></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="tableseparator_wind">风速风力</td>
+    </tr>
+    <tr class="td_wind_data">
+      <td>最高阵风</td>
+      <td><#wgustTM>&nbsp;<#windunit></td>
+      <td>at&nbsp;<#TwgustTM></td>
+    </tr>
+    <tr class="td_wind_data">
+      <td>最高平均风速</td>
+      <td><#windTM>&nbsp;<#windunit>&nbsp;(<#Tbeaufort>)</td>
+      <td>at&nbsp;<#TwindTM></td>
+    </tr>
+    <tr class="td_wind_data">
+      <td>风程</td>
+      <td><#windrun>&nbsp;<#windrununit></td>
+      <td>&nbsp;</td>
+    </tr>
+	<tr class="td_wind_data">
+      <td>风向</td>
+      <td><#domwindbearing>&deg;&nbsp;<#domwinddir></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="tableseparator_pressure">气压相关</td>
+    </tr>
+    <tr class="td_pressure_data">
+      <td>最高气压&nbsp;(SL)</td>
+      <td><#pressTH>&nbsp;<#pressunit></td>
+      <td>at&nbsp;<#TpressTH></td>
+    </tr>
+    <tr class="td_pressure_data">
+      <td>最低气压&nbsp;(SL)</td>
+      <td><#pressTL>&nbsp;<#pressunit></td>
+      <td>at&nbsp;<#TpressTL></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="td_navigation_bar">:<a href="index.htm">now</a>::<a href="gauges.htm">gauges</a>::<a href="today.htm">today</a>::<a href="yesterday.htm">yesterday</a>::<a href="thismonth.htm">this&nbsp;month</a>::<a href="thisyear.htm">this&nbsp;year</a>::<a href="record.htm">records</a>::<a href="monthlyrecord.htm">monthly&nbsp;records</a>::<a href="trends.htm">trends</a>:<#forum><#webcam></td>
+    </tr>
+
+  </tbody>
+</table>
+<p class="credits"><br />
+页面更新 <#update><br />
+</p>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-13178528-2', 'jimy.me');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
